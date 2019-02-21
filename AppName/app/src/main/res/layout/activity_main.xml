@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="click"/>
+    <TextView
+        android:id="@+id/text_classloader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp">
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="210dp"
+            android:layout_height="6dp"
+            android:max="100"
+            android:progress="100"
+            android:layout_marginBottom="4dp"
+            android:progressDrawable="@drawable/vote_progress_shape"
+            android:visibility="visible"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button_classloader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ClassLoader"
+        android:text="classloader"/>
+
+    <Button
+        android:id="@+id/button_animaton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onAnimation"
+        android:text="button_animation"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onWebView"
+        android:text="button_webview"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onKotlin"
+        android:text="button_kt"/>
+
+
+
+
+
+</LinearLayout>
